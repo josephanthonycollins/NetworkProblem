@@ -26,7 +26,7 @@ namespace SocialNetWorkConsoleApp
 
         public void load(string file)
         {   
-            //Insert Try and Catch Block
+            //TODO: Insert Try and Catch Block
             StreamReader sr = new StreamReader(file);
 
             string tmp = "";            
@@ -42,6 +42,7 @@ namespace SocialNetWorkConsoleApp
 
         public bool getUserToEnterFileDetails()
         {
+            //TODO: Remove the current hardcoded path
             Console.WriteLine("Enter file (i.e. C:\\SocialNetwork.txt): ");
             //string fname = Console.ReadLine();
             string fname = "D:\\JC Masters\\UTRC Problem\\SocialNetwork.txt";
@@ -61,7 +62,6 @@ namespace SocialNetWorkConsoleApp
             FileInfo f = new FileInfo(file);
             if (f.Exists)
                 return true;
-
             return false;
         }
 

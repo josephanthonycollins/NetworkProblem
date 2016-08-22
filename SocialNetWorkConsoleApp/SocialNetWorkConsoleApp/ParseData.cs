@@ -70,10 +70,4 @@ namespace SocialNetWorkConsoleApp
         }
     }
 }
-//Count the Number of items in the list
-//Is the first item in the list?
-//     If No, add it and make a note of index
-//     If Yes, make a note of index
-//Is the second item in the list?
-//     If No, add it and make a note of index
-//     If Yes, make a note of index
+

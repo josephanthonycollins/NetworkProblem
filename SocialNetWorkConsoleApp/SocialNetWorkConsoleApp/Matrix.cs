@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SocialNetWorkConsoleApp
 {
-    //Class Tkane from Joseph Collins M.Sc thesis.
+    //Class Taken from Joseph Collins M.Sc thesis.
     class Matrix
     {
         private int rows;
