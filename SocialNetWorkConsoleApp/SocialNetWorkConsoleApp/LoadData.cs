@@ -26,6 +26,7 @@ namespace SocialNetWorkConsoleApp
 
         public void load(string file)
         {   
+            //Insert Try and Catch Block
             StreamReader sr = new StreamReader(file);
 
             string tmp = "";            

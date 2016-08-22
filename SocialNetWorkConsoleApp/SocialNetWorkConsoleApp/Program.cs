@@ -9,7 +9,7 @@ namespace SocialNetWorkConsoleApp
     {
         static void Main(string[] args)
         {
-
+            //Loading the Data
             LoadData dataLoader = new LoadData();
             bool doesFileExist = dataLoader.getUserToEnterFileDetails();
 
@@ -21,6 +21,9 @@ namespace SocialNetWorkConsoleApp
                 return;
             }
 
+            //Parsing the Original Data to Unique List of Nodes
+            ParseData datafilter = new ParseData();
+            bool canwefilter = datafilter.generateUniqueNamesAndIndices(dataLoader.OriginalData);
 
         }
     }
