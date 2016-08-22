@@ -1,4 +1,3 @@
-C:\Users\Katie\Desktop\UTRC\NetworkProblem\SocialNetWorkConsoleApp\SocialNetWorkConsoleApp\obj\x86\Debug\SocialNetWorkConsoleApp.csprojResolveAssemblyReference.cache
 C:\Users\Katie\Desktop\UTRC\NetworkProblem\SocialNetWorkConsoleApp\SocialNetWorkConsoleApp\bin\Debug\SocialNetWorkConsoleApp.exe
 C:\Users\Katie\Desktop\UTRC\NetworkProblem\SocialNetWorkConsoleApp\SocialNetWorkConsoleApp\bin\Debug\SocialNetWorkConsoleApp.pdb
 C:\Users\Katie\Desktop\UTRC\NetworkProblem\SocialNetWorkConsoleApp\SocialNetWorkConsoleApp\obj\x86\Debug\SocialNetWorkConsoleApp.exe

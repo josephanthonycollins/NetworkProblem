@@ -6,7 +6,7 @@ using System.Text;
 namespace SocialNetWorkConsoleApp
 {
     //Class Taken from Joseph Collins M.Sc thesis.
-    class Matrix
+    public class Matrix
     {
         private int rows;
 

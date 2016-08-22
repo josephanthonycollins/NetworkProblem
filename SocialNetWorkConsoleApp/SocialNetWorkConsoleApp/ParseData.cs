@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SocialNetWorkConsoleApp
 {
-    class ParseData
+    public class ParseData
     {
         private List<string> uniqueListOfNodes = new List<string>();
 
