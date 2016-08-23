@@ -24,28 +24,37 @@ namespace SocialNetWorkConsoleApp
             set { textFileLocation = value; }
         }
 
-        public void load(string file)
+        public bool load(string file)
         {   
-            //TODO: Insert Try and Catch Block
-            StreamReader sr = new StreamReader(file);
-
-            string tmp = "";            
-            do
+            try
             {
-                tmp = sr.ReadLine();
-                OriginalData.Add(tmp);
+                StreamReader sr = new StreamReader(file);
+
+                string tmp = "";
+                do
+                {
+                    tmp = sr.ReadLine();
+                    OriginalData.Add(tmp);
+                }
+                while (tmp != null);
+
+                sr.Close();
+                return true;
             }
-            while (tmp != null);
             
-            sr.Close();
+            catch
+            {
+                Console.WriteLine("\nLoading error. See LoadData.cs, load().");
+                return false;
+            }
+                
         }
 
         public bool getUserToEnterFileDetails()
         {
-            //TODO: Remove the current hardcoded path
             Console.WriteLine("Enter file (i.e. C:\\SocialNetwork.txt): ");
-            //string fname = Console.ReadLine();
-            string fname = "D:\\JC Masters\\UTRC Problem\\SocialNetwork.txt";
+            string fname = Console.ReadLine();
+            //string fname = "D:\JC Masters\UTRC Problem\SocialNetwork.txt";
 
             this.TextFileLocation = fname;
 

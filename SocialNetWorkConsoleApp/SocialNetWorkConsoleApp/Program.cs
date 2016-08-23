@@ -12,24 +12,25 @@ namespace SocialNetWorkConsoleApp
             //Loading the Data
             LoadData dataLoader = new LoadData();
             bool doesFileExist = dataLoader.getUserToEnterFileDetails();
-
-            if (doesFileExist)
-                dataLoader.load(dataLoader.TextFileLocation);
-            else
+            bool canWeLoadData = dataLoader.load(dataLoader.TextFileLocation);
+            if (!canWeLoadData || !doesFileExist)
             {
-                Console.WriteLine("\n\nFile does not exist. Exiting.");
+                Console.WriteLine("\n\nFile does not exist, or it can't be accessed. Exiting.");
+                Console.ReadLine();
                 return;
             }
 
-            //Parsing the Original Data to get unique list of names and indices
+            //Parsing the Original Data to get a) unique list of vertices b) edges
             ParseData datafilter = new ParseData();
+            Console.WriteLine("\n\nParsing data.");
             bool canWeFilter = datafilter.generateUniqueNamesAndIndices(dataLoader.OriginalData);
-
             if (!canWeFilter)
             {
                 Console.WriteLine("\n\nCan't generate List of names. Exiting.");
+                Console.ReadLine();
                 return;   
             }
+            Console.WriteLine("\nThere are {0} unique vertices.", datafilter.UniqueListOfNodes.Count);
 
             //Create the SimulationWrapper object and run the simulation
             SimulationWrapper sim = new SimulationWrapper(datafilter);

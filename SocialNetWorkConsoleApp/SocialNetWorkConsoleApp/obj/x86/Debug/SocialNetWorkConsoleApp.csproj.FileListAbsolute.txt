@@ -2,3 +2,4 @@ C:\Users\Katie\Desktop\UTRC\NetworkProblem\SocialNetWorkConsoleApp\SocialNetWork
 C:\Users\Katie\Desktop\UTRC\NetworkProblem\SocialNetWorkConsoleApp\SocialNetWorkConsoleApp\bin\Debug\SocialNetWorkConsoleApp.pdb
 C:\Users\Katie\Desktop\UTRC\NetworkProblem\SocialNetWorkConsoleApp\SocialNetWorkConsoleApp\obj\x86\Debug\SocialNetWorkConsoleApp.exe
 C:\Users\Katie\Desktop\UTRC\NetworkProblem\SocialNetWorkConsoleApp\SocialNetWorkConsoleApp\obj\x86\Debug\SocialNetWorkConsoleApp.pdb
+C:\Users\Katie\Desktop\UTRC\NetworkProblem\SocialNetWorkConsoleApp\SocialNetWorkConsoleApp\obj\x86\Debug\SocialNetWorkConsoleApp.csprojResolveAssemblyReference.cache
